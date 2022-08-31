@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_logintask1/ListAllFootball.dart';
 import 'package:flutter_logintask1/registerPage.dart';
 
 class logintask extends StatefulWidget {
@@ -150,7 +151,12 @@ class _logintaskState extends State<logintask> {
                         'LOGIN',
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Listfootball()));
+                      },
                     )),
               ),
               SizedBox(
